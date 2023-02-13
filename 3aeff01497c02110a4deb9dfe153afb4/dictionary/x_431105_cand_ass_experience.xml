@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Candidate Experience" max_length="40" name="x_431105_cand_ass_experience" sizeclass="1" type="collection">
+        <element choice="1" label="Accepted Duration (months)" max_length="40" name="accepted_duration_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="72" sequence="72" value="72"/>
+            </choice>
+        </element>
+        <element choice="1" label="Accepted Duration (years)" max_length="40" name="accepted_duration_years" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" value="1"/>
+                <element inactive_on_update="false" label="2" value="2"/>
+                <element inactive_on_update="false" label="3" value="3"/>
+                <element inactive_on_update="false" label="4" value="4"/>
+                <element inactive_on_update="false" label="5" value="5"/>
+                <element inactive_on_update="false" label="6" value="6"/>
+            </choice>
+        </element>
+        <element label="Candidate" max_length="32" name="candidate" reference="x_431105_cand_ass_candidate" type="reference"/>
+        <element label="Duration (days)" max_length="40" name="duration_days" type="integer"/>
+        <element choice="1" label="Application Duration (months)" max_length="40" name="duration_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+            </choice>
+        </element>
+        <element choice="1" label="Application Duration (years)" max_length="40" name="duration_years" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" value="1"/>
+                <element inactive_on_update="false" label="2" value="2"/>
+                <element inactive_on_update="false" label="3" value="3"/>
+                <element inactive_on_update="false" label="4" value="4"/>
+                <element inactive_on_update="false" label="5" value="5"/>
+                <element inactive_on_update="false" label="6" value="6"/>
+            </choice>
+        </element>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Field" max_length="100" name="field" type="string"/>
+        <element label="Final check" max_length="40" name="final_check" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Observation" max_length="1000" name="observation" type="string"/>
+        <element choice="3" default="100" label="% relevant" max_length="40" name="percentage_relevant" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="10" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="20" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="30" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="40" sequence="40" value="40"/>
+                <element inactive_on_update="false" label="50" sequence="50" value="50"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="70" sequence="70" value="70"/>
+                <element inactive_on_update="false" label="80" sequence="80" value="80"/>
+                <element inactive_on_update="false" label="90" sequence="90" value="90"/>
+                <element inactive_on_update="false" label="100" sequence="100" value="100"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Reply" max_length="1000" name="reply" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Request" max_length="1000" name="request" type="string"/>
+        <element label="Requirement" max_length="400" name="requirement" reference="x_431105_cand_ass_assessment_requirement" type="reference"/>
+        <element label="RfR check" max_length="40" name="rfr_check" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Supporting docs" max_length="40" name="supporting_docs" type="file_attachment"/>
+        <index name="index">
+            <element name="candidate"/>
+        </index>
+    </element>
+</database>

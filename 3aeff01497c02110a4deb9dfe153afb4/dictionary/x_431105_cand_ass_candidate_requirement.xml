@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Candidate Requirement" max_length="40" name="x_431105_cand_ass_candidate_requirement" sizeclass="12" type="collection">
+        <element label="Candidate" max_length="32" name="candidate" reference="x_431105_cand_ass_candidate" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Observation" max_length="1000" name="observation" type="string"/>
+        <element choice="1" label="Calculated Duration (months)" max_length="40" name="period_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="30" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="42" sequence="42" value="42"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="72" sequence="72" value="72"/>
+            </choice>
+        </element>
+        <element choice="1" label="Calculated Duration (years)" max_length="40" name="period_years" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+            </choice>
+        </element>
+        <element label="Reply" max_length="1000" name="reply" type="string"/>
+        <element label="Request" max_length="1000" name="request" type="string"/>
+        <element label="Requirement" max_length="32" name="requirement" reference="x_431105_cand_ass_assessment_requirement" type="reference"/>
+        <index name="index">
+            <element name="candidate"/>
+        </index>
+        <index name="index2">
+            <element name="requirement"/>
+        </index>
+    </element>
+</database>

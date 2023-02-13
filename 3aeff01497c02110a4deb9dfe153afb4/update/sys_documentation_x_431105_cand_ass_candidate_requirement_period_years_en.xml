@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="period_years" label="Calculated Duration (years)" language="en" table="x_431105_cand_ass_candidate_requirement">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>period_years</element>
+            <help/>
+            <hint/>
+            <label>Calculated Duration (years)</label>
+            <language>en</language>
+            <name>x_431105_cand_ass_candidate_requirement</name>
+            <plural>Calculated Duration (years)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-12 13:17:51</sys_created_on>
+            <sys_id>3ea9fe909789a110a22ebbc3f153af36</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Calculated Duration (years)</sys_name>
+            <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
+            <sys_update_name>sys_documentation_x_431105_cand_ass_candidate_requirement_period_years_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-13 11:35:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

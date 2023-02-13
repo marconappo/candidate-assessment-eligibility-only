@@ -39,6 +39,7 @@
     grCandidate.query();
     while (grCandidate.next()) {
         caUtils.copyAssessmentSCInCandidate(assessment, grCandidate.sys_id);
+		caUtils.copyAssessmentRequirementsInCandidate(assessment, grCandidate.sys_id);
         caUtils.populateCandidateQA(assessment, grCandidate.sys_id);
         grCandidate.state = caUtils.IN_ELIGIBILITY;
         grCandidate.update();
@@ -50,7 +51,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e092b94d1b4425101f602f08b04bcbf9</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Import Candidates Q&amp;A</sys_name>
         <sys_overrides/>
         <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
@@ -58,7 +59,7 @@
         <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
         <sys_update_name>sys_script_e092b94d1b4425101f602f08b04bcbf9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-01 10:37:41</sys_updated_on>
+        <sys_updated_on>2023-02-12 14:58:57</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

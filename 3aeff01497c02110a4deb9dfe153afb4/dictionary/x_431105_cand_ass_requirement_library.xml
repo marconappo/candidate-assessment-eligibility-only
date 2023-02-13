@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Requirement Library" max_length="40" name="x_431105_cand_ass_requirement_library" sizeclass="4" type="collection">
+        <element choice="3" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Education and Training" sequence="0" value="education_and_training"/>
+                <element inactive_on_update="false" label="Professional experience" sequence="1" value="professional_experience"/>
+            </choice>
+        </element>
+        <element choice="1" label="Default for" max_length="40" name="default_for" reference="sys_choice" reference_qual="name=x_431105_cand_ass_assessment^element=state^EQ" reference_qual_condition="name=x_431105_cand_ass_assessment^element=state^EQ" type="reference">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Duration (days)" max_length="40" name="period_days" type="integer"/>
+        <element choice="1" label="Duration (months)" max_length="40" name="period_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="30" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="42" sequence="42" value="42"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="72" sequence="72" value="72"/>
+            </choice>
+        </element>
+        <element choice="1" label="Duration (years)" max_length="40" name="period_years" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" value="1"/>
+                <element inactive_on_update="false" label="2" value="2"/>
+                <element inactive_on_update="false" label="3" value="3"/>
+                <element inactive_on_update="false" label="4" value="4"/>
+                <element inactive_on_update="false" label="5" value="5"/>
+                <element inactive_on_update="false" label="6" value="6"/>
+            </choice>
+        </element>
+        <element label="Requirement" max_length="400" name="requirement" type="string"/>
+        <element display="true" label="Requirement Title" max_length="100" name="requirement_title" type="string"/>
+    </element>
+</database>

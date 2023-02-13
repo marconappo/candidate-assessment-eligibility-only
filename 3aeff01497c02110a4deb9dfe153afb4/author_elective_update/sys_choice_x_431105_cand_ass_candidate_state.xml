@@ -80,7 +80,7 @@
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>false</inactive>
+            <inactive>true</inactive>
             <label>In Preselection</label>
             <language>en</language>
             <name>x_431105_cand_ass_candidate</name>
@@ -91,16 +91,16 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f28fbd9497c42110a4deb9dfe153afae</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-01 09:53:47</sys_updated_on>
+            <sys_updated_on>2023-02-11 23:00:56</sys_updated_on>
             <value>40</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>state</element>
             <hint/>
-            <inactive>false</inactive>
+            <inactive>true</inactive>
             <label>In Selection</label>
             <language>en</language>
             <name>x_431105_cand_ass_candidate</name>
@@ -111,10 +111,30 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b19fb9d497c42110a4deb9dfe153af23</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-01 09:53:51</sys_updated_on>
+            <sys_updated_on>2023-02-11 23:00:56</sys_updated_on>
             <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request for Review</label>
+            <language>en</language>
+            <name>x_431105_cand_ass_candidate</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-11 23:00:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df65f3c4970d6110a22ebbc3f153af79</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-11 23:00:35</sys_updated_on>
+            <value>55</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -124,16 +144,16 @@
             <label>Closure</label>
             <language>en</language>
             <name>x_431105_cand_ass_candidate</name>
-            <sequence>6</sequence>
+            <sequence>7</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-01-01 09:53:57</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2108f1f69708a110c96bbf36f053af27</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-01 09:56:23</sys_updated_on>
+            <sys_updated_on>2023-02-11 23:00:38</sys_updated_on>
             <value>60</value>
         </sys_choice>
     </sys_choice>

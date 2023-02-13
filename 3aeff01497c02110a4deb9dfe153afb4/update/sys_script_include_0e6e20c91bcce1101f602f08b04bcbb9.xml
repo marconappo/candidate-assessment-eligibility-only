@@ -8,9 +8,9 @@
         <description>Utility class for working with configuration items</description>
         <name>CandidateAssessmentUtils</name>
         <script><![CDATA[var CandidateAssessmentUtils = Class.create();
-
 CandidateAssessmentUtils.prototype = {
     initialize: function() {
+        // STATES
         this.ELIGIBILITY = '0c55a1d497442110a4deb9dfe153af5f';
         this.PRESELECTION = '7f65a1d497442110a4deb9dfe153af65';
         this.PRESELECTION_CBT = '5165ad5897442110a4deb9dfe153af6f';
@@ -21,31 +21,34 @@ CandidateAssessmentUtils.prototype = {
         this.IN_PRESELECTION = '40';
         this.IN_SELECTION = '40';
         this.CANDIDATE_CLOSURE = '40';
-
-
-
+        // GROUPS
         this.FILE_ADMINISTRATORS = 'bcd7f9a8475211107443f2e7536d437f';
         // TABLES
         this.ASSESSMENT_TABLE = 'x_431105_cand_ass_assessment';
         this.CANDIDATE_TABLE = 'x_431105_cand_ass_candidate';
         this.ASSESSMENT_SC = 'x_431105_cand_ass_assessment_selection_criteria';
         this.ASSESSMENT_QUESTION = 'x_431105_cand_ass_assessment_question';
+        this.ASSESSMENT_REQUIREMENT = 'x_431105_cand_ass_assessment_requirement';
         this.CANDIDATE_ANSWER = 'x_431105_cand_ass_candidate_answers';
         this.CANDIDATE_SC = 'x_431105_cand_ass_candidate_selection_criteria_score';
+        this.CANDIDATE_REQUIREMENT = 'x_431105_cand_ass_candidate_requirement';
         this.EXCLUSION_REASON = 'x_431105_cand_ass_exclusion_reason';
         this.SCRITERIA_LIBRARY = 'x_431105_cand_ass_selection_criteria_library';
         this.QUESTION_LIBRARY = 'x_431105_cand_ass_question_library';
-
+        this.REQUIREMENT_LIBRARY = 'x_431105_cand_ass_requirement_library';
+		// LOCATIONS
         this.BRUSSELS = '3b0c81de974ca510352bb39fe153affc';
         this.LUXEMBOURG = '795c499e974ca510352bb39fe153af69';
     },
 
     importAssessments: function() {
         this.cleanUpTables();
-        this.cleanUpRecordsWithoutAssessment();
-        this.cleanUpRecordsWithoutCandidate();
-        //this.importAssessmentsHrAndEPSO();
-        this.importAssessmentsOnlyHR();
+        var assessmentTables = [this.EXCLUSION_REASON, this.ASSESSMENT_SC, this.ASSESSMENT_QUESTION, this.ASSESSMENT_REQUIREMENT];
+        var candidateTables = [this.CANDIDATE_ANSWER, this.CANDIDATE_SC, this.CANDIDATE_REQUIREMENT];
+        this.cleanUpRecordsWithoutAssessment(assessmentTables);
+        this.cleanUpRecordsWithoutCandidate(candidateTables);
+        this.importAssessmentsHrAndEPSO();
+        //this.importAssessmentsOnlyHR();
     },
 
     calculateCandidateScore2: function(candidate, assessmentState) {
@@ -172,11 +175,13 @@ CandidateAssessmentUtils.prototype = {
         var BUD = '46c6f9efa9fe198101ddf5eed9adf6e7';
         var MONICA = '5bb230b347e71110654e690cd36d43cc';
         var assessmentList = [];
-
-        assessmentList[0] = this._createAssessment('EPSO/AD/140/LOGISTICS', this.PRESELECTION);
-        assessmentList[1] = this._createAssessment('EPSO/AD/141/LAW', '');
-        assessmentList[2] = this._createAssessment('EPSO/AD/142/LINGUISTICS', '');
-        assessmentList[3] = this._createAssessment('COM/2010/545', this.PRESELECTION_CBT);
+		var assignedTo = '977545591b61b810f95c2fc3b24bcb34';
+		var president = '08d4cddd1b21b810f95c2fc3b24bcb0d';
+		var selectionBoard = '460689911ba1b810f95c2fc3b24bcbc6,a50609911ba1b810f95c2fc3b24bcbce';
+        assessmentList[0] = this._createAssessment('EPSO/AD/140/LOGISTICS', this.PRESELECTION, '', '', '');
+        assessmentList[1] = this._createAssessment('EPSO/AD/141/CHEMICALS', '', assignedTo, president, selectionBoard);
+        assessmentList[2] = this._createAssessment('EPSO/AD/142/LINGUISTICS', '', '', '');
+        assessmentList[3] = this._createAssessment('COM/2010/545', this.PRESELECTION_CBT, '', '', '');
 
         this._addCandidateList(assessmentList[0], [ABEL, ADELA, BUD]);
         this._addCandidateList(assessmentList[1], [ABEL, ADELA, BUD]);
@@ -187,6 +192,7 @@ CandidateAssessmentUtils.prototype = {
         for (var i = 0; i < length; i++) {
             var assessment = assessmentList[i];
             this.addExclusionReasons(assessment);
+			this.populateAssessmentRequirement(this.ELIGIBILITY, assessment);
             if (i == (length - 1)) {
                 this.populateAssessmentSCriteria(this.PRESELECTION, assessment);
                 this.populateAssessmentQuestions(this.PRESELECTION, assessment);
@@ -199,6 +205,21 @@ CandidateAssessmentUtils.prototype = {
         }
     },
 
+    populateAssessmentRequirement: function(assessmentState, assessment) {
+        var grAssessmentRequirements = new GlideRecord(this.ASSESSMENT_REQUIREMENT);
+        var grRequirementLibrary = new GlideRecord(this.REQUIREMENT_LIBRARY);
+        grRequirementLibrary.addQuery('default_for', assessmentState);
+        grRequirementLibrary.query();
+        while (grRequirementLibrary.next()) {
+            grAssessmentRequirements.initialize();
+            grAssessmentRequirements.assessment = assessment;
+            grAssessmentRequirements.requirement = grRequirementLibrary.sys_id + "";
+            grAssessmentRequirements.active = 'true';
+            grAssessmentRequirements.insert();
+        }
+    },
+
+
     importAssessmentsOnlyHR: function() {
         var MONICA = '5bb230b347e71110654e690cd36d43cc';
         var assessment = this._createAssessment('COM/2010/545', this.PRESELECTION_CBT);
@@ -210,10 +231,13 @@ CandidateAssessmentUtils.prototype = {
         this.populateAssessmentQuestions(this.SELECTION, assessment);
     },
 
-    _createAssessment: function(name, statesToSkip) {
+    _createAssessment: function(name, statesToSkip, assignedTo, president, selectionBoard) {
         var gr = new GlideRecord(this.ASSESSMENT_TABLE);
         gr.initialize();
         gr.short_description = name;
+		gr.assigned_to = assignedTo;
+		gr.president_chair = president;
+		gr.additional_assignee_list = selectionBoard;
         gr.states_to_skip = statesToSkip;
         gr.assignment_group = this.FILE_ADMINISTRATORS;
         var glideDateTime = new GlideDateTime();
@@ -246,7 +270,7 @@ CandidateAssessmentUtils.prototype = {
 
     // Exclusion Reasons
     addExclusionReasons: function(assessment) {
-        var exclusionReasonList = ['Does not fulfill the general admission conditions', 'Does not fulfill the specific admission conditions for qualifications', 'Does not fulfill the specific admission conditions for professional experience', 'Does not fulfill the specific admission conditions for language requirements', 'Based on the Information provided in your application form, you do not fulfil the admission conditions relating to the qualifications: You do not have a level of education corresponding cycle of university studies attested by one of the diplomas in German or Austrian law n (see annex 1.1 to the competition notice and the corrigendum)', 'You did not complete all parts of the application form, in English, French or German (see annex II of the Notice of competition)'];
+        var exclusionReasonList = ['Does not fulfill the general admission conditions', 'Does not fulfill the specific admission conditions for qualifications', 'Does not fulfill the specific admission conditions for professional experience', 'Does not fulfill the specific admission conditions for language requirements', 'Based on the Information provided in your application form, you do not fulfil the admission conditions relating to the professional experience: You do not have enough experience in chemicals and related fields', 'You did not complete all parts of the application form, in English, French or German (see annex II of the Notice of competition)'];
         //this._addExclusionReason(exclusionReasonList[0], assessment);
         //this._addExclusionReason(exclusionReasonList[1], assessment);
         //this._addExclusionReason(exclusionReasonList[2], assessment);
@@ -264,25 +288,28 @@ CandidateAssessmentUtils.prototype = {
 
     },
 
-    cleanUpRecordsWithoutAssessment: function() {
-        var gr = new GlideRecord(this.EXCLUSION_REASON);
-        gr.addQuery('assessment', '');
-        gr.query();
-        gr.setWorkflow(true);
-        gr.deleteMultiple();
-
-        gr = new GlideRecord(this.ASSESSMENT_SC);
-        gr.addQuery('assessment', '');
-        gr.query();
-        gr.setWorkflow(true);
-        gr.deleteMultiple();
-
-        gr = new GlideRecord(this.ASSESSMENT_QUESTION);
-        gr.addQuery('assessment', '');
-        gr.query();
-        gr.setWorkflow(true);
-        gr.deleteMultiple();
+    cleanUpRecordsWithoutAssessment: function(assessmentTables) {
+        var gr = '';
+        for (var i = 0; i < assessmentTables.length; i++) {
+            gr = new GlideRecord(assessmentTables[i]);
+            gr.addQuery('assessment', '');
+            gr.query();
+            gr.setWorkflow(true);
+            gr.deleteMultiple();
+        }
     },
+
+    cleanUpRecordsWithoutCandidate: function(candidateTables) {
+        var gr = '';
+        for (var i = 0; i < candidateTables.length; i++) {
+            gr = new GlideRecord(candidateTables[i]);
+            gr.addQuery('candidate', '');
+            gr.query();
+            gr.setWorkflow(true);
+            gr.deleteMultiple();
+        }
+    },
+
 
     populateCandidateQA: function(assessment, candidate) {
 
@@ -321,23 +348,21 @@ CandidateAssessmentUtils.prototype = {
             grCandidateSC.insert();
         }
     },
-    cleanUpRecordsWithoutCandidate: function() {
-        var gr = new GlideRecord(this.CANDIDATE_ANSWER);
-        gr.addQuery('candidate', '');
-        gr.query();
-        gr.setWorkflow(false);
-        gr.deleteMultiple();
 
-        gr = new GlideRecord(this.CANDIDATE_SC);
-        gr.addQuery('candidate', '');
-        gr.query();
-        gr.setWorkflow(false);
-        gr.deleteMultiple();
-
-
+    copyAssessmentRequirementsInCandidate: function(assessment, candidate) {
+        var grAssessmentRequirement = new GlideRecord(this.ASSESSMENT_REQUIREMENT);
+        grAssessmentRequirement.addQuery('assessment', assessment);
+        grAssessmentRequirement.query();
+        var grCandidateRequirement = new GlideRecord(this.CANDIDATE_REQUIREMENT);
+        while (grAssessmentRequirement.next()) {
+            grCandidateRequirement.initialize();
+            grCandidateRequirement.requirement = grAssessmentRequirement.sys_id + "";
+            grCandidateRequirement.candidate = candidate;
+            grCandidateRequirement.insert();
+        }
     },
 
-
+	
     getCandidateSCParent: function(current) {
         var candidate = current.candidate;
         var grParent = new GlideRecord(this.CANDIDATE_SC);
@@ -391,13 +416,13 @@ CandidateAssessmentUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-12-26 18:02:04</sys_created_on>
         <sys_id>0e6e20c91bcce1101f602f08b04bcbb9</sys_id>
-        <sys_mod_count>158</sys_mod_count>
+        <sys_mod_count>181</sys_mod_count>
         <sys_name>CandidateAssessmentUtils</sys_name>
         <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
         <sys_update_name>sys_script_include_0e6e20c91bcce1101f602f08b04bcbb9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-01-07 09:52:03</sys_updated_on>
+        <sys_updated_on>2023-02-13 14:05:07</sys_updated_on>
     </sys_script_include>
 </record_update>

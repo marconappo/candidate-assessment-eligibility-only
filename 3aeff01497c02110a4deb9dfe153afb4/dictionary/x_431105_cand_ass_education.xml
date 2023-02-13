@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Candidate Education" max_length="40" name="x_431105_cand_ass_education" sizeclass="2" type="collection">
+        <element choice="3" label="Accepted Duration (months)" max_length="40" name="accepted_duration_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="30" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="42" sequence="42" value="42"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="72" sequence="72" value="72"/>
+            </choice>
+        </element>
+        <element label="Candidate" max_length="32" name="candidate" reference="x_431105_cand_ass_candidate" reference_floats="true" type="reference"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element display="true" label="Field" max_length="100" name="field" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Obtained by 13/04/21" max_length="40" name="obtained_by_13_04_21" type="boolean"/>
+        <element choice="1" label="Application Duration (months)" max_length="40" name="period_months" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="12" sequence="12" value="12"/>
+                <element inactive_on_update="false" label="18" sequence="18" value="18"/>
+                <element inactive_on_update="false" label="24" sequence="24" value="24"/>
+                <element inactive_on_update="false" label="36" sequence="36" value="36"/>
+                <element inactive_on_update="false" label="48" sequence="48" value="48"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+            </choice>
+        </element>
+        <element choice="1" label="Duration (years)" max_length="40" name="period_years" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+            </choice>
+        </element>
+        <element choice="3" default="100" label="% relevant" max_length="40" name="relevant" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="0" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="10" sequence="10" value="10"/>
+                <element inactive_on_update="false" label="20" sequence="20" value="20"/>
+                <element inactive_on_update="false" label="30" sequence="30" value="30"/>
+                <element inactive_on_update="false" label="40" sequence="40" value="40"/>
+                <element inactive_on_update="false" label="50" sequence="50" value="50"/>
+                <element inactive_on_update="false" label="60" sequence="60" value="60"/>
+                <element inactive_on_update="false" label="70" sequence="70" value="70"/>
+                <element inactive_on_update="false" label="80" sequence="80" value="80"/>
+                <element inactive_on_update="false" label="90" sequence="90" value="90"/>
+                <element inactive_on_update="false" label="100" sequence="100" value="100"/>
+            </choice>
+        </element>
+        <element label="Requirement" max_length="32" name="requirement" reference="x_431105_cand_ass_assessment_requirement" type="reference"/>
+        <element label="RfR check" max_length="40" name="rfr_check" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Supporting Docs" max_length="40" name="supporting_docs" type="file_attachment"/>
+        <element label="Title" max_length="100" name="title" type="string"/>
+        <index name="index">
+            <element name="candidate"/>
+        </index>
+        <index name="index2">
+            <element name="requirement"/>
+        </index>
+    </element>
+</database>

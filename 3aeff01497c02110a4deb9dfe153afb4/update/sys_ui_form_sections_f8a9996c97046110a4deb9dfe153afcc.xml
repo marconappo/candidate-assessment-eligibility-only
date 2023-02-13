@@ -21,12 +21,26 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d5db54051b8ce1101f602f08b04bcb5f</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_431105_cand_ass_candidate" name="x_431105_cand_ass_candidate" sys_domain="global" view="Default view">f8a9996c97046110a4deb9dfe153afcc</sys_ui_form>
             <sys_ui_section caption="Notes" display_value="Notes" name="x_431105_cand_ass_candidate" sys_domain="global" view="Default view">b0a9996c97046110a4deb9dfe153af81</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-01-01 20:43:25</sys_updated_on>
+            <sys_updated_on>2023-02-11 22:25:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-02-11 22:24:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>224de74c97c96110a22ebbc3f153af75</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_431105_cand_ass_candidate" name="x_431105_cand_ass_candidate" sys_domain="global" view="Default view">f8a9996c97046110a4deb9dfe153afcc</sys_ui_form>
+            <sys_ui_section caption="Eligibility Details" display_value="Eligibility Details" name="x_431105_cand_ass_candidate" sys_domain="global" view="Default view">2e4de74c97c96110a22ebbc3f153af70</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-02-11 22:25:02</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_431105_cand_ass_candidate</name>

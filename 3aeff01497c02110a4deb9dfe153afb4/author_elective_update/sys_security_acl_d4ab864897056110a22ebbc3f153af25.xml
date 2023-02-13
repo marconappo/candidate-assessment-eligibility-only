@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_431105_cand_ass_education</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-11 15:18:13</sys_created_on>
+        <sys_id>d4ab864897056110a22ebbc3f153af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_431105_cand_ass_education</sys_name>
+        <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
+        <sys_update_name>sys_security_acl_d4ab864897056110a22ebbc3f153af25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-11 15:18:13</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</application>
+        <file_path/>
+        <instance_id>380f1ecbdb3063c4b2e05d00cf961946</instance_id>
+        <instance_name>dev71712</instance_name>
+        <name>sys_security_acl_d4ab864897056110a22ebbc3f153af25</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_431105_cand_ass_education</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-02-11 15:18:13</sys_created_on><sys_id>d4ab864897056110a22ebbc3f153af25</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_431105_cand_ass_education</sys_name><sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package><sys_policy/><sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope><sys_update_name>sys_security_acl_d4ab864897056110a22ebbc3f153af25</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-02-11 15:18:13</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-29451293</payload_hash>
+        <record_name>x_431105_cand_ass_education</record_name>
+        <reverted_from/>
+        <source>b31b4e4497056110a22ebbc3f153afb0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-11 15:18:13</sys_created_on>
+        <sys_id>d8ab0a4897056110a22ebbc3f153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186410e2e080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-11 15:18:13</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>14ab0a48b5056110cbb63551959b8231</update_guid>
+        <update_guid_history>14ab0a48b5056110cbb63551959b8231:-29451293</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-02-11 19:31:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>190a509294c3431186e92ce454806361</sys_id>
+        <sys_metadata>d4ab864897056110a22ebbc3f153af25</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_431105_cand_ass_education</sys_name>
+        <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
+        <sys_parent display_value="x_431105_cand_ass_education">e79b464897056110a22ebbc3f153af73</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
+        <sys_scope_delete display_value="">102d0c1703d24bb18e1e1addf418fef1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_d4ab864897056110a22ebbc3f153af25</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_d4ab864897056110a22ebbc3f153af25">d8ab0a4897056110a22ebbc3f153af31</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-02-11 19:31:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
