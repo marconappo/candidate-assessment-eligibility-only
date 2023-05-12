@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>45ebd50597b2611006f1bfb6f053afab</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_431105_cand_ass_requirement_library">
+    <x_431105_cand_ass_requirement_library action="INSERT_OR_UPDATE">
+        <category>professional_experience</category>
+        <default_for display_value="Eligibility">0c55a1d497442110a4deb9dfe153af5f</default_for>
+        <number>RLB0001007</number>
+        <period_days/>
+        <period_months>48</period_months>
+        <period_years/>
+        <requirement>A minimum of 4 years’ (48 months) professional experience in the field of chemicals</requirement>
+        <requirement_title>Experience in chemicals field [4 years]</requirement_title>
+        <sys_created_by>nappoma</sys_created_by>
+        <sys_created_on>2023-05-12 14:13:29</sys_created_on>
+        <sys_id>45ebd50597b2611006f1bfb6f053afab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>nappoma</sys_updated_by>
+        <sys_updated_on>2023-05-12 14:15:49</sys_updated_on>
+    </x_431105_cand_ass_requirement_library>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>nappoma</sys_created_by>
+        <sys_created_on>2023-05-12 14:43:13</sys_created_on>
+        <sys_id>19b2a98d97b2611006f1bfb6f053af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Experience in chemicals field [4 years]</sys_name>
+        <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
+        <sys_update_name>sys_metadata_link_19b2a98d97b2611006f1bfb6f053af96</sys_update_name>
+        <sys_updated_by>nappoma</sys_updated_by>
+        <sys_updated_on>2023-05-12 14:43:13</sys_updated_on>
+        <tablename>x_431105_cand_ass_requirement_library</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -3,137 +3,167 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>6d51943c97812510a22ebbc3f153af67</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>5a879d8d9772611006f1bfb6f053af43</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>candidate</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>e151943c97812510a22ebbc3f153af68</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>da879d8d9772611006f1bfb6f053af43</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <element>assigned_to</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>6551943c97812510a22ebbc3f153af68</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>5e879d8d9772611006f1bfb6f053af43</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>more_info_required_boolean</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <element>approver</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>e551943c97812510a22ebbc3f153af68</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>de879d8d9772611006f1bfb6f053af43</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>ts_info_in_l2_boolean</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <element>state</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>6951943c97812510a22ebbc3f153af68</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>52879d8d9772611006f1bfb6f053af44</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>diploma_ok_boolean</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>5</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>e951943c97812510a22ebbc3f153af68</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>professional_experience_ok_boolean</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>6</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>6d51943c97812510a22ebbc3f153af68</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>eligible</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>d2879d8d9772611006f1bfb6f053af44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>more_info_required_boolean</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>56879d8d9772611006f1bfb6f053af44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ts_info_in_l2_boolean</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>ed51943c97812510a22ebbc3f153af68</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>d6879d8d9772611006f1bfb6f053af44</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>exclusion_reasons</element>
-            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">a151943c97812510a22ebbc3f153af67</list_id>
+            <element>diploma_ok_boolean</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
-            <sys_id>6151943c97812510a22ebbc3f153af69</sys_id>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>5a879d8d9772611006f1bfb6f053af44</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>professional_experience_ok_boolean</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>da879d8d9772611006f1bfb6f053af44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>exclusion_reasons</element>
+            <list_id display_value="x_431105_cand_ass_candidate" element="NULL" name="x_431105_cand_ass_candidate" parent="x_431105_cand_ass_assessment" relationship="NULL" sys_domain="global" view="Default view">5e87958d9772611006f1bfb6f053afec</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
+            <sys_id>5e879d8d9772611006f1bfb6f053af44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -146,19 +176,19 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-13 14:19:21</sys_created_on>
+            <sys_created_by>nappoma</sys_created_by>
+            <sys_created_on>2023-05-12 13:54:24</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a151943c97812510a22ebbc3f153af67</sys_id>
+            <sys_id>5e87958d9772611006f1bfb6f053afec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_431105_cand_ass_candidate</sys_name>
             <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
             <sys_policy/>
             <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
             <sys_update_name>sys_ui_list_x_431105_cand_ass_candidate_x_431105_cand_ass_assessment_null</sys_update_name>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-13 14:19:21</sys_updated_on>
+            <sys_updated_by>nappoma</sys_updated_by>
+            <sys_updated_on>2023-05-12 13:54:24</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

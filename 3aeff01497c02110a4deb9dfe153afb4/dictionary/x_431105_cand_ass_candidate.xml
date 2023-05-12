@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Candidate" max_length="40" name="x_431105_cand_ass_candidate" sizeclass="10" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Candidate" max_length="40" name="x_431105_cand_ass_candidate" text_index="true" type="collection">
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Assessment" max_length="32" name="assessment" reference="x_431105_cand_ass_assessment" type="reference"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" display="true" label="Candidate" max_length="32" name="candidate" reference="sys_user" type="reference"/>
         <element label="Diploma OK?" max_length="100" name="diploma_ok" type="string"/>

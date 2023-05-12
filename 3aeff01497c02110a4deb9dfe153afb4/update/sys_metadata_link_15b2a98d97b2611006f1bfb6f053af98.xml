@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b7db190597b2611006f1bfb6f053af5b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_431105_cand_ass_requirement_library">
+    <x_431105_cand_ass_requirement_library action="INSERT_OR_UPDATE">
+        <category>education_and_training</category>
+        <default_for display_value="Eligibility">0c55a1d497442110a4deb9dfe153af5f</default_for>
+        <number>RLB0001003</number>
+        <period_days/>
+        <period_months>48</period_months>
+        <period_years/>
+        <requirement>A level of education which corresponds to completed university studies of at least 4 years, attested by a diploma in chemistry, chemical engineering, mineralogy, mining, toxicology, ecotoxicology, biology, environmental studies, human or veterinary medicine, pharmacology, or by a diploma in another subject directly relevant to the nature of the duties.</requirement>
+        <requirement_title>Education in chemicals field [4 years]</requirement_title>
+        <sys_created_by>nappoma</sys_created_by>
+        <sys_created_on>2023-05-12 14:13:23</sys_created_on>
+        <sys_id>b7db190597b2611006f1bfb6f053af5b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>nappoma</sys_updated_by>
+        <sys_updated_on>2023-05-12 14:15:44</sys_updated_on>
+    </x_431105_cand_ass_requirement_library>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>nappoma</sys_created_by>
+        <sys_created_on>2023-05-12 14:43:13</sys_created_on>
+        <sys_id>15b2a98d97b2611006f1bfb6f053af98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Education in chemicals field [4 years]</sys_name>
+        <sys_package display_value="Candidate Assessment" source="x_431105_cand_ass">3aeff01497c02110a4deb9dfe153afb4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Candidate Assessment">3aeff01497c02110a4deb9dfe153afb4</sys_scope>
+        <sys_update_name>sys_metadata_link_15b2a98d97b2611006f1bfb6f053af98</sys_update_name>
+        <sys_updated_by>nappoma</sys_updated_by>
+        <sys_updated_on>2023-05-12 14:43:13</sys_updated_on>
+        <tablename>x_431105_cand_ass_requirement_library</tablename>
+    </sys_metadata_link>
+</record_update>
